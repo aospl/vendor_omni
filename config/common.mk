@@ -36,6 +36,20 @@ PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
     vendor/omni/prebuilt/bin/blacklist:system/addon.d/blacklist
 
+# Add korean keypad
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/app/AxT9IME.apk:system/app/AxT9IME.apk \
+    vendor/omni/prebuilt/lib/libDHWR.so:system/lib/libDHWR.so \
+    vendor/omni/prebuilt/lib/libDWP.so:system/lib/libDWP.so \
+    vendor/omni/prebuilt/lib/libXt9core.so:system/lib/libXt9core.so
+
+# Add Custom fonts
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/fonts/DroidSans.ttf:system/fonts/DroidSans.ttf \
+    vendor/omni/prebuilt/fonts/DroidSans-Bold.ttf:system/fonts/DroidSans-Bold.ttf \
+    vendor/omni/prebuilt/fonts/DroidSansKorean.ttf:system/fonts/DroidSansKorean.ttf \
+    vendor/omni/prebuilt/fonts/DroidSansKorean-Bold.ttf:system/fonts/DroidSansKorean-Bold.ttf
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
